@@ -1,4 +1,7 @@
 version: 1.0.{build}
+init:
+- cmd: npm install
+cache: '%APPDATA%\npm-cache'
 build_script:
 - cmd: npm run build
 artifacts:
