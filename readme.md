@@ -4,6 +4,7 @@
 
 
 [![Build status](https://ci.appveyor.com/api/projects/status/u03aq729kfgu1pqj?svg=true)](https://ci.appveyor.com/project/rikbosch/radvanfortuin)
+[![Build status](https://ci.appveyor.com/api/projects/status/u03aq729kfgu1pqj/branch/master?svg=true)](https://ci.appveyor.com/project/rikbosch/radvanfortuin/branch/master)
 
 ## Dev
 
