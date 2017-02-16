@@ -1,7 +1,7 @@
 {
   "name": "radvanfortuin",
   "productName": "Radvanfortuin",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "My astounding app",
   "license": "MIT",
   "repository": "r.bosch/radvanfortuin",
@@ -13,7 +13,7 @@
   "scripts": {
     "test": "xo",
     "start": "electron .",
-    "build": "electron-packager . --out=dist --asar --overwrite --all"
+    "build": "electron-packager . --out=dist --asar --prune --overwrite --platform=win32 --arch=ia32 --icon=assets/logo.ico"
   },
   "files": [
     "index.js",

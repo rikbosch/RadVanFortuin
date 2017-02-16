@@ -3,6 +3,8 @@
 > Rad van Fortuin VV Den Ham
 
 
+[![Build status](https://ci.appveyor.com/api/projects/status/u03aq729kfgu1pqj?svg=true)](https://ci.appveyor.com/project/rikbosch/radvanfortuin)
+
 ## Dev
 
 ```
