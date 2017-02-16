@@ -1,0 +1,6 @@
+version: 1.0.{build}
+build_script:
+- cmd: npm run build
+artifacts:
+- path: dist/Radvanfortuin-win32-ia32
+  name: Radvanfortuin-win-x86
