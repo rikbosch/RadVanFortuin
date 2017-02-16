@@ -26,13 +26,11 @@ function createMainWindow() {
 		titleBarStyle: "hidden-inset"
 	});
 
-	// win.setMenu(null);
 	win.setKiosk(true);
-	// win.setAutoHideMenuBar(true);
+
 	win.loadURL(`file://${__dirname}/index.html`);
 	win.on('closed', onClosed);
-
-
+	
 	return win;
 }
 
