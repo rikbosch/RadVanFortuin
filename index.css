@@ -1,0 +1,55 @@
+        html,
+        body {
+            height: 100%;
+        }
+        
+        html {
+            display: table;
+            margin: auto;
+        }
+        
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            overflow: hidden;
+            background-color: #254f96;
+        }
+        
+        div {
+            text-align: justify;
+        }
+        
+        @font-face {
+            font-family: 'digital-7regular';
+            src: url('assets/digital-7-webfont.woff2') format('woff2'), url('assets/digital-7-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        #nummer {
+            font-family: 'digital-7regular';
+            color: #fff;
+            font-weight: 500;
+            font-size: 650px;
+        }
+        
+        #logo {
+            /*float: left;*/
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: url(assets/logo.png);
+            background-size: 140px;
+            background-repeat: no-repeat;
+            width: 150px;
+            height: 200px;
+        }
+        
+        #sv {
+            font-family: Ubuntu, sans-serif;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: #f88a00;
+            font-size: 20px;
+        }
