@@ -34,16 +34,16 @@ function init() {
         nextLuckyNumber();
     })
 
-    docuement.addEventListener("keyup", event => {
-        if (e.keyCode == 32) {
+    document.addEventListener("keyup", event => {
+        if (event.keyCode == 32) {
             nextLuckyNumber();
         };
     })
     document.addEventListener("keydown", event => {
         switch (event.key) {
             case "Escape":
-                if (remote.getCurrentWindow().isFullScreen()) {
-                    remote.getCurrentWindow().setFullScreen(false);
+                if (remote.getCurrentWindow().isKiosk()) {
+                    remote.getCurrentWindow().setKiosk(false);
                 }
                 break;
         }
