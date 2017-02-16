@@ -16,3 +16,9 @@ build_script:
 artifacts:
 - path: dist/Radvanfortuin-win32-ia32
   name: Radvanfortuin-win-x86
+
+deploy:
+- provider: Environment
+  name: GitHubRelease
+  on:
+    appveyor_repo_tag: true
