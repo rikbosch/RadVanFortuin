@@ -1,6 +1,6 @@
-# radvanfortuin
+# Rad van Fortuin
 
-> My astounding app
+> Rad van Fortuin VV Den Ham
 
 
 ## Dev
