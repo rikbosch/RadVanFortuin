@@ -1,7 +1,12 @@
 'use strict';
 const electron = require('electron');
+const Config = require('electron-config');
 
 const app = electron.app;
+const config = new Config();
+
+config.set('app.version','0.1.0');
+console.log(config.path);
 
 // adds debug features like hotkeys for triggering dev tools and reload
 require('electron-debug')();
@@ -14,7 +19,6 @@ function onClosed() {
 	// for multiple windows store them in an array
 	mainWindow = null;
 }
-
 
 function createMainWindow() {
 	const win = new electron.BrowserWindow({
