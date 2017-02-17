@@ -1,55 +1,91 @@
-        html,
-        body {
-            height: 100%;
+        html, body {
+        	height: 100%;
         }
-        
+
         html {
-            display: table;
-            margin: auto;
+        	/*display: table;*/
+        	/*margin: auto;*/
         }
-        
+
         body {
-            display: table-cell;
-            vertical-align: middle;
-            overflow: hidden;
-            background-color: #254f96;
+        	/*display: table-cell;
+        	vertical-align: middle;*/
+        	margin: 0;
+        	padding: 0;
+        	overflow: hidden;
+        	background-color: #254f96;
+        	/*background-image: url('http://media0.giphy.com/media/10D60NnXkMIaHe/giphy.gif');*/
+        	background-size: cover;
         }
-        
-        div {
-            text-align: justify;
-        }
-        
+        /*div {
+        	text-align: justify;
+        }*/
+
         @font-face {
-            font-family: 'digital-7regular';
-            src: url('assets/digital-7-webfont.woff2') format('woff2'), url('assets/digital-7-webfont.woff') format('woff');
-            font-weight: normal;
-            font-style: normal;
+        	font-family: 'digital-7regular';
+        	src: url('assets/digital-7-webfont.woff2') format('woff2'), url('assets/digital-7-webfont.woff') format('woff');
+        	font-weight: normal;
+        	font-style: normal;
         }
-        
+
+        .center {
+        	height: 900px;
+        	position: relative;
+        }
+
+        .center div {
+        	margin: 0;
+        	position: absolute;
+        	top: 50%;
+        	left: 50%;
+        	-ms-transform: translate(-50%, -50%);
+        	transform: translate(-50%, -50%);
+        }
+
         #nummer {
-            font-family: 'digital-7regular';
-            color: #fff;
-            font-weight: 500;
-            font-size: 650px;
+        	font-family: 'digital-7regular';
+        	color: #fff;
+        	font-weight: 500;
+        	font-size: 750px;
+        	/*margin: auto;*/
         }
-        
+
         #logo {
-            /*float: left;*/
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            background: url(assets/logo.png);
-            background-size: 140px;
-            background-repeat: no-repeat;
-            width: 150px;
-            height: 200px;
+        	/*float: left;*/
+        	position: fixed;
+        	top: 10px;
+        	left: 10px;
+        	background: url(assets/logo.png);
+        	background-size: 140px;
+        	background-repeat: no-repeat;
+        	width: 150px;
+        	height: 200px;
         }
-        
+
         #sv {
-            font-family: Ubuntu, sans-serif;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            color: #f88a00;
-            font-size: 20px;
+        	font-family: Ubuntu, sans-serif;
+        	position: fixed;
+        	bottom: 10px;
+        	right: 10px;
+        	color: #f88a00;
+        	font-size: 20px;
+        }
+
+        #bg {
+        	position: fixed;
+        	top: -50%;
+        	left: -50%;
+        	width: 200%;
+        	height: 200%;
+        }
+
+        #bg img {
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	right: 0;
+        	bottom: 0;
+        	margin: auto;
+        	min-width: 50%;
+        	min-height: 50%;
         }

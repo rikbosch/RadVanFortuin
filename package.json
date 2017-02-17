@@ -25,7 +25,9 @@
     "electron"
   ],
   "dependencies": {
-    "electron-debug": "^1.0.0"
+    "electron-config": "^0.2.1",
+    "electron-debug": "^1.0.0",
+    "rxjs-fetch": "^2.1.6"
   },
   "devDependencies": {
     "devtron": "^1.1.0",
