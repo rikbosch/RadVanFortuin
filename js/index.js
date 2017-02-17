@@ -47,27 +47,31 @@ function init() {
 			})
 	}
 
-
-
 	var next = function () {
-		if (winner) {
-			winner.unsubscribe();
-		}
-		document.getElementById("bg").style["visibility"] = "hidden";
-		document.getElementById("nummer").style["color"] = "";
+		resetWinner();
 		currentTarget = currentTarget + (Math.floor(Math.random() * 1399) + 400);
 		demo.update(currentTarget);
 
 		loadNextWinnerImage();
 	};
 
+	var resetWinner = function () {
+		if (winner) {
+			winner.unsubscribe();
+		}
+		document.getElementById("bg").style["visibility"] = "hidden";
+		document.getElementById("nummer").style["color"] = "";
+	}
 
+	var winnerTags = ["win", "happy"]
 	var sub;
 	var loadNextWinnerImage = function () {
 		if (sub) {
 			sub.unsubscribe();
 		}
-		sub = rxFetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=win&fmt=json')
+		var tag = winnerTags[Math.floor((Math.random() * winnerTags.length))]
+		console.log("tag=" + tag);
+		sub = rxFetch('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=' + tag + '&fmt=json')
 			.json()
 			.subscribe(res => {
 				var url = res.data.image_url;
@@ -82,6 +86,9 @@ function init() {
 		if (e.keyCode == 32) {
 			next();
 		};
+		if (e.keyCode == 13) {
+			resetWinner();
+		}
 	}
 
 	document.body.onclick = function () {
